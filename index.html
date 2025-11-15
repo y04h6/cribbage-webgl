@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Cribbage</title>
+    <title>Unity Web Player | カードゲーム(仮)</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=800 height=600 tabindex="-1" style="width: 800px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/cribbage-webgl.loader.js"></script>
+    <script src="Build/table-game-webgl.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -27,9 +27,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/cribbage-webgl.data",
-        frameworkUrl: "Build/cribbage-webgl.framework.js",
-        codeUrl: "Build/cribbage-webgl.wasm",
+        dataUrl: "Build/table-game-webgl.data",
+        frameworkUrl: "Build/table-game-webgl.framework.js",
+        codeUrl: "Build/table-game-webgl.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Cribbage",
